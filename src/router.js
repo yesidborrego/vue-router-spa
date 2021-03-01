@@ -1,20 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
 import Home from './views/Home.vue'
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-import Users from './views/Users.vue'
 import Login from './views/Login.vue'
-import Signup from './views/Signup.vue'
->>>>>>> parent of 8647629... New routes, bootstrap 4 added and finish
-=======
-import Users from './views/Users.vue'
-import Login from './views/Login.vue'
-import Signup from './views/Signup.vue'
-import Products from './views/products/Index.vue';
 import DetailProd from './views/products/Detail.vue';
->>>>>>> work
+import Products from './views/products/Index.vue';
+import Signup from './views/Signup.vue'
+import Users from './views/Users.vue'
 
 Vue.use(Router)
 
@@ -24,14 +16,8 @@ export default new Router({
   routes: [
     { path: '/', name: 'home', component: Home },
     { path: '/about', name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-<<<<<<< HEAD
-<<<<<<< HEAD
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-=======
-      component: () => import(/* webpackChunkName: "chunk-about" */ './views/About.vue')
+      // component: () => import(/* webpackChunkName: "chunk-about" */ './views/About.vue')
     },
     {
       path: '/contact',
@@ -52,17 +38,8 @@ export default new Router({
       path: '/signup',
       name: 'signup',
       component: Signup,
->>>>>>> parent of 8647629... New routes, bootstrap 4 added and finish
-    }
-=======
-      component: () => import(/* webpackChunkName: "chunk-about" */ './views/About.vue')
     },
-    { path: '/contact', name: 'contact', component: () => import(/* webpackChunkName: "chunk-contact" */ './views/Contact.vue') }, // Lazy-loading
-    { path: '/users/:id', name: 'Users', component: Users },
-    { path: '/login', name: 'Login', component: Login },
-    { path: '/signup', name: 'signup', component: Signup },
     { path: '/products', name: 'products', component: Products },
     { path: '/detailprod/:id', name: 'detailprod', component: DetailProd },
->>>>>>> work
   ]
 })

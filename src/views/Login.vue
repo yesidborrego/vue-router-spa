@@ -1,12 +1,7 @@
 <template>
   <div class="container">
-<<<<<<< HEAD
-    <h1>This is a login page</h1>
-  </div>
-</template>
-=======
      <div class="wrapper">
-      <form class="form-signin">       
+      <form class="form-signin">
         <h2 class="form-signin-heading">Please login</h2>
         <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
         <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
@@ -71,4 +66,3 @@
     border-top-right-radius: 0;
   }
 </style>
->>>>>>> work
